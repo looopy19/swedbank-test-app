@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+    <link
+      rel="stylesheet"
+      href="https://design.swedbankpay.com/v/7.1.0/styles/swedbankpay.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <section>
+          <nav class="main-nav">
+            <div class="logo-wrapper">
+              <a href="./index.html" class="logo">
+                <img
+                  src="./images/swedbank-logo-default.svg"
+                  class="logo_img"
+                  alt="logo"
+                />
+              </a>
+              <a href=""><span class="enviroment-link">Private</span></a>
+            </div>
+            <div class="nav-wrapper">
+              <a href=""><span class="language-link">EN</span></a>
+              <a href=""
+                ><span class="register-link">Become a customer</span></a
+              >
+              <a href=""><span class="enter-link">Enter</span></a>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </header>
+    <section>
+      <div class="hero-wrapper">
+        <div class="container">
+          <form method="post">
+            <fieldset>
+              <fieldset class="mb-4" data-step="1">
+                <div class="radio-group">
+                  <div class="row">
+                    <div class="form-groupcol-12 col-sm-3">
+                      <label>What are you planning to buy?*</label>
+                    </div>
+                    <div class="form-groupcol-12 col-sm-3 radio">
+                      <input
+                        type="radio"
+                        id="car"
+                        name="buy"
+                        checked
+                        value="Car"
+                      />
+                      <label for="car">Car</label>
+                    </div>
+
+                    <div class="form-groupcol-12 col-sm-3 radio">
+                      <input
+                        type="radio"
+                        id="motorcycle"
+                        name="buy"
+                        value="Motorcycle"
+                      />
+                      <label for="motorcycle">Motorcycle</label>
+                    </div>
+
+                    <div class="form-groupcol-12 col-sm-3 radio">
+                      <input
+                        type="radio"
+                        id="bicycle"
+                        name="buy"
+                        value="Bicycle"
+                      />
+                      <label for="bicycle">Bicycle</label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="checkbox-group mb-4" data-step="2">
+                <div class="row">
+                  <div class="form-groupcol-12 col-sm-4">
+                    Are you employed?*
+                  </div>
+                  <div class="form-groupcol-12 col-sm-8">
+                    <div class="checkbox">
+                      <input
+                        type="checkbox"
+                        id="employed"
+                        name="status"
+                        value="Employed"
+                      />
+                      <label for="employed">Yes</label>
+                    </div>
+                    <div class="checkbox">
+                      <input
+                        type="checkbox"
+                        id="unemployed"
+                        name="status"
+                        value="Unemployed"
+                      />
+                      <label for="unemployed">No</label>
+                    </div>
+                    <div class="checkbox">
+                      <input
+                        type="checkbox"
+                        id="student"
+                        name="status"
+                        value="Student"
+                      />
+                      <label for="student">Student</label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="mb-4" data-step="3">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="form-groupcol-12 col-sm-4">
+                      <label for="income"> Your monthly income:* </label>
+                      <i
+                        class="material-icons mr-3"
+                        data-tooltip
+                        data-tooltip-position="top"
+                      >
+                        help_outline
+                        <span class="tooltip">
+                          Please enter your monthly income in euros.
+                        </span>
+                      </i>
+                    </div>
+                    <div class="input-group form-groupcol-12 col-sm-8">
+                      <textarea
+                        id="income"
+                        type="textarea"
+                        class="form-control"
+                        name="income"
+                        placeholder="Enter here"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="mb-4" data-step="4">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="form-groupcol-12 col-sm-4">
+                      <label for=""
+                        >Do you have financial obligations outside of
+                        Swedbank?*</label
+                      >
+                    </div>
+                    <div class="form-groupcol-12 col-sm-8 radio">
+                      <select class="form-control" name="obligations">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="I don't know">I don't know</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="mb-4" data-step="5">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="form-groupcol-12 col-sm-4">
+                      <label for="email"> Enter your e-mail:* </label>
+                      <div class="input-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          id="email"
+                          placeholder="name@mail.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="form__summary" data-step="6">
+                <ul class="item-list">
+                  <li>
+                    <div>
+                      <h3>You are planning to buy:</h3>
+                      <small data-field="buy"></small>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h3>Your employed status:</h3>
+                      <small data-field="status"></small>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h3>Your monthly income:</h3>
+                      <small data-field="income"></small>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h3>Your financial obligations outside Swedbank:</h3>
+                      <small data-field="obligations"></small>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h3>Your e-mail:</h3>
+                      <small data-field="email"></small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-between mt-2 mb-4">
+                <button class="button button-back" type="button">Back</button
+                ><button class="button button-next" type="button">Next</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://design.swedbankpay.com/v/7.1.0/scripts/dg.js"
+      global="true"
+      autoload="true"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
